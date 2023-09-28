@@ -509,3 +509,5 @@ video.load();
 video.play();
 
 document.querySelectorAll('[data-swiper-prev]').forEach(el => el.addEventListener('click', () => changeVideo(false)));
+
+console.log("did this work?")
