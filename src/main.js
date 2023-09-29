@@ -460,11 +460,12 @@ const prevVideoButton = document.querySelectorAll('.button.prev');
 
 // Array of video sources
 const videoSources = [
+  'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb4ab825e770cedceba_video5.mp4.txt',
   'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb4e2d7721f0bea5daa_video1.mp4.txt',
   'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb435fc94c5fca769a2_video2.mp4.txt',
   'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb4388b33407a38a305_video3.mp4.txt',
-  'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb525776fc2d3d4353e_video4.mp4.txt',
-  'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb4ab825e770cedceba_video5.mp4.txt'
+  'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb525776fc2d3d4353e_video4.mp4.txt'
+  
 ];
 
 let currentVideoIndex = 0;
