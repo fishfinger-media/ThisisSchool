@@ -26,6 +26,42 @@ const swiperAlumni = new Swiper(".swiper.is-alumni-slider", {
   }
 });
 
+// TABS SLIDER
+function initSwiper() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth >= 767) {
+    const tabs = new Swiper(".swiper.is-tabs", {
+      wrapperClass: "swiper_wrapper",
+      slideClass: "swiper_slide",
+
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true
+      },
+      slidesPerView: 1,
+      spaceBetween: 32,
+      loop: false,
+      allowTouchMove: true
+    });
+
+    function handleTabClick(tabNumber) {
+      tabs.slideTo(tabNumber);
+    }
+
+    for (let i = 0; i <= 3; i++) {
+      const tabElement = document.getElementById(`tabs-slide-${i}`);
+      tabElement.addEventListener("click", () => handleTabClick(i));
+    }
+  } else {
+  }
+}
+
+// Call the function on page load
+window.addEventListener("load", initSwiper);
+
+// Call the function when the window is resized
+window.addEventListener("resize", initSwiper);
 
 
 // PLYR BACKGROUND VID
