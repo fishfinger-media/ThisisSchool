@@ -262,6 +262,7 @@ function showPopup() {
       item.classList.remove("active");
     }
   });
+  changeVideo(true);
 
 }
 
@@ -496,6 +497,7 @@ const prevVideoButton = document.querySelectorAll('.button.prev');
 
 // Array of video sources
 const videoSources = [
+  'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/651ab3ec9c9d9a09e73f02cc_video0.mp4.txt',
   'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb4ab825e770cedceba_video5.mp4.txt',
   'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb4e2d7721f0bea5daa_video1.mp4.txt',
   'https://uploads-ssl.webflow.com/64a545a3b7ba05bd07986119/65158bb435fc94c5fca769a2_video2.mp4.txt',
