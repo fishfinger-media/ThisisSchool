@@ -383,7 +383,7 @@ function step5(event) {
     subjects: selectedLanguages
   };
 
-  const apiUrl = "https://api.newthisislanguage.com/api/v1/website/forms/new-trial";
+  const apiUrl = "https://api.thisisschool.com/api/v1/website/forms/new-trial";
 
   fetch(apiUrl, {
       method: "POST",
