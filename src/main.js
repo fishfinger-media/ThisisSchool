@@ -228,7 +228,7 @@ const popupWindow = document.querySelector(".trial-popup_wrapper");
 const popupSection = document.querySelector(".trial-popup_main");
 const popupMain = document.querySelectorAll(".flip-wrapper");
 const popupCloseBtn = document.querySelectorAll("[popup-close]");
-
+const confettiElement = document.querySelectorAll('#confetti')
 
 // TRIAL SWIPER
 const trialform = new Swiper(".swiper.is-popup", {
@@ -289,6 +289,10 @@ function hidePopup() {
 
 popupCloseBtn.forEach((popupCloseBtn) => {
   popupCloseBtn.addEventListener("click", hidePopup);
+});
+
+confettiElement.forEach((confettiElement) => {
+  confettiElement.addEventListener("click", hidePopup);
 });
 
 document.addEventListener("keydown", (event) => {
