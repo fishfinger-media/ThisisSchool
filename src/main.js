@@ -228,6 +228,7 @@ const popupWindow = document.querySelector(".trial-popup_wrapper");
 const popupSection = document.querySelector(".trial-popup_main");
 const popupMain = document.querySelectorAll(".flip-wrapper");
 const popupCloseBtn = document.querySelectorAll("[popup-close]");
+const confettiElement = document.querySelectorAll('#confetti')
 
 // TRIAL SWIPER
 const trialform = new Swiper(".swiper.is-popup", {
@@ -404,7 +405,7 @@ function step5(event) {
         console.log("Success");
 
         document.querySelector(".flip-wrapper").classList.add("success");
-        
+
         //CONFETTI
 
         const defaults = {
