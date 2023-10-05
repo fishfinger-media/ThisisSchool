@@ -404,8 +404,7 @@ function step5(event) {
         console.log("Success");
 
         document.querySelector(".flip-wrapper").classList.add("success");
-        document.querySelector(".trial-popup_container").style.display = "none";
-
+        
         //CONFETTI
 
         const defaults = {
