@@ -490,6 +490,7 @@ allowLanguageCheckbox.addEventListener('change', function () {
     }
 });
 
+if (window.innerWidth >= 768) {
 
 // VIDEO
 // Get references to the video element and the change video buttons
@@ -551,3 +552,6 @@ video.load();
 video.play();
 
 document.querySelectorAll('[data-swiper-prev]').forEach(el => el.addEventListener('click', () => changeVideo(false)));
+
+  
+}
