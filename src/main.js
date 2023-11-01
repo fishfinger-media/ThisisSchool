@@ -6,7 +6,7 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-
+console.log("testinglivecode")
 // ALUMNI SLIDER
 const swiperAlumni = new Swiper(".swiper.is-alumni-slider", {
   wrapperClass: "swiper_wrapper",
