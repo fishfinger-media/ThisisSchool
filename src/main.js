@@ -51,11 +51,15 @@ function initSwiper() {
 
     for (let i = 0; i <= 3; i++) {
       const tabElement = document.getElementById(`tabs-slide-${i}`);
-      tabElement.addEventListener("click", () => handleTabClick(i));
+      if (tabElement) {
+        tabElement.addEventListener("click", () => handleTabClick(i));
+      }
     }
   } else {
+    // Handle the case when screenWidth is less than 767 if needed.
   }
 }
+
 
 // Call the function on page load
 window.addEventListener("load", initSwiper);
