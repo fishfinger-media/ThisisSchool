@@ -542,7 +542,7 @@ function changeVideo(forward) {
 
 // Event listener for the 'ended' event to loop the video
 video.addEventListener('ended', () => {
-    video.currentTime = video.duration - 2; // Loop the last 2 seconds
+    video.currentTime = video.duration - 2, 0; // Loop the last 2 seconds
     video.play();
 });
 
