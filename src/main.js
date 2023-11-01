@@ -530,7 +530,7 @@ function changeVideo(forward) {
         video.play();
 
         // Reset the playback to loop the last 2 seconds
-        video.currentTime = video.duration - 2;
+        video.currentTime = video.duration - 2, 0;
 
         // Remove the preloadVideo element to free up resources
         preloadVideo.remove();
