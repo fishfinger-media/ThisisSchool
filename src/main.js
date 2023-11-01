@@ -50,7 +50,7 @@ function initSwiper() {
     }
 
     for (let i = 0; i <= 3; i++) {
-      const tabElement = document.getElementById(`tabs-slide-${i}`);
+      const tabElement = document.querySelectorAll(`tabs-slide-${i}`);
       tabElement.addEventListener("click", () => handleTabClick(i));
     }
   } else {
